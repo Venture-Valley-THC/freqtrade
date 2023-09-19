@@ -1,5 +1,4 @@
-FROM freqtradeorg/freqtrade:develop_plot
-
+FROM custom_plot_freqtrade:latest
 
 # Pin jupyter-client to avoid tornado version conflict
 RUN pip install jupyterlab jupyter-client==7.3.4 --user --no-cache-dir

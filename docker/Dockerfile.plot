@@ -1,6 +1,4 @@
-ARG sourceimage=freqtradeorg/freqtrade
-ARG sourcetag=develop
-FROM ${sourceimage}:${sourcetag}
+FROM custom_freqtrade:latest
 
 # Install dependencies
 COPY requirements-plot.txt /freqtrade/
