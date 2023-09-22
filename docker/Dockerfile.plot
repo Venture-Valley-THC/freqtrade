@@ -1,3 +1,5 @@
+ARG TAG
+
 FROM registry.minecrafter.nl/trading/custom_freqtrade:${TAG:-latest}
 
 # Install dependencies

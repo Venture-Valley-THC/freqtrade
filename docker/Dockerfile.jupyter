@@ -1,3 +1,5 @@
+ARG TAG
+
 FROM registry.minecrafter.nl/trading/custom_plot_freqtrade:${TAG:-latest}
 
 # Pin jupyter-client to avoid tornado version conflict
