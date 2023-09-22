@@ -1,4 +1,4 @@
-FROM custom_freqtrade:latest
+FROM registry.minecrafter.nl/trading/custom_freqtrade:${TAG:-latest}
 
 # Install dependencies
 COPY requirements-plot.txt /freqtrade/
