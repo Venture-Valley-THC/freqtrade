@@ -1,12 +1,12 @@
 FROM freqtradeorg/freqtrade:stable
 
-# Switch user to root if you must install something from apt
-# Don't forget to switch the user back below!
-# USER root
-
 COPY cooltradinglib-0.1.0-py3-none-any.whl cooltradinglib-0.1.0-py3-none-any.whl
 
 RUN pip install --user cooltradinglib-0.1.0-py3-none-any.whl
 
+# Switch user to root if you must install something from apt
+# Don't forget to switch the user back below!
+USER root
+RUN apt install git -y
 # Switch back to user (only if you required root above)
-# USER ftuser
+USER ftuser
