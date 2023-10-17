@@ -1,0 +1,3 @@
+FROM custom_freqtrade:latest
+
+ENTRYPOINT [ "python3 -m cooltradinglib.gui" ]
